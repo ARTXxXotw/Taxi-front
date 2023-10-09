@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Inter:wght@500&display=swap');
+
+.registor4-kotta{
+    display: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+@media  (max-width:501px) {
+    .registor4-kotta{
+        width: 100%;
+        height: auto;
+        display: block;
+        background-color: #FFE500;
+        overflow-x: hidden;
+    }
+    .registor4-ichi{
+        width: 88%;
+        margin: auto;
+        padding-top: 40px;
+        transition: 0.5s;
+    }
+    .btn-registor4-1{
+        width: 95px;
+        height: 39px;
+        border-radius: 20px;
+        background: #000000;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Gabarito', cursive;
+font-size: 20px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 15px;
+position: relative;
+left: 20px;
+transition: 0.5s;
+    }
+    .btn-registor4-2{
+        width: 95px;
+        height: 39px;
+        border-radius: 20px;
+        background: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Gabarito', cursive;
+font-size: 20px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: left;
+transition: 0.5s;
+    }
+    .btn-reg-div{
+        width: 70%;
+        display: flex;
+        justify-content: end;
+        transition: 0.5s;
+    }
+    .btn-img-registor4{
+        width: 107%;
+        display: flex;
+        justify-content: end;
+        position: relative;
+        top: -40px;
+        transition: 0.5s;
+    }
+    .btn-reg-div-2{
+        width: 100%;
+        position: relative;
+        top: -270px;
+        right: 10px;
+        transition: 0.5s;
+    }
+    .btn-img-registor4 img{
+        position: relative;
+        z-index: 10;
+        
+
+    }
+    .registor4-text h2{
+        font-family: 'Gabarito', cursive;
+        font-family: 'Inter', sans-serif;
+font-size: 7vw;
+font-weight: 550;
+margin-bottom: 22px;
+transition: 0.5s;
+    }
+    .registor4-text{
+        width: 100%;
+        position: relative;
+        top: -90px;
+        transition: 0.5s;
+    }
+.registor4-text p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 3vw;
+font-weight: 600;
+margin-bottom: 25px;
+transition: 0.5s;
+}
+.registor4-btn-but-joy button{
+    width: 100%;
+height: 70px;
+border-radius: 30px;
+border: 4px solid #000000;
+background: none;
+outline: none;
+margin-top: 10px;
+font-family: 'Gabarito', cursive;
+font-family: 'Inter', sans-serif;
+font-size: 4vw;
+font-weight: 600;
+text-align: center;
+transition: 0.5s;
+}
+.registor4-btn-but-joy button:hover{
+background-color: #000000;
+color: white;
+}
+}
+@media (max-width:357px) {
+    .btn-registor4-1 {
+        width: 80px;
+        height: 37px;
+        font-size: 17px;
+        position: relative;
+        top: 20px;
+    }
+    .btn-registor4-2{
+        width: 80px;
+        height: 37px;
+font-size: 17px;
+    }
+}
