@@ -1,20 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 @media (max-width: 501px) {
   .navbar {
-    width: 100%;
+    width: 98%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: auto;
   }
   .navbar i {
-    font-size: 35px;
+    font-size: 30px;
   }
   .navbar .logoImage {
-    width: 20%;
+    width: 84px;
   }
   .navbar .accauntImage {
-    width: 5%;
+    width: 22px;
+    height: 22px;
   }
   .titleMain {
     text-align: center;
@@ -22,7 +24,62 @@
     font-family: Yandex Sans Text;
     font-size: 40px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
+  }
+  .card_Menu_div h1 {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+  }
+  .card_Menu_div {
+    width: 150px;
+    display: block;
+  }
+  .card_Menu_div_img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: #e8e8e8;
+    overflow: hidden;
+  }
+  .card_Menu_div_img img {
+    height: 100%;
+    width: 100%;
+  }
+  .card_Menu {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .div_button_Main {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e8e8e8;
+    border-radius: 20px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .div_button_Main h1 {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
