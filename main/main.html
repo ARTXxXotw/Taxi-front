@@ -154,9 +154,11 @@
         if (document.querySelector("#subscribes_Modal").style.left=="0px") {
             document.querySelector("#subscribes_Modal").style="position: fixed;left: -100%;"
             document.querySelector("#mediaNavbar").style="position: fixed;left:0;background-color: #5E5E5E73;"
+            document.querySelector(".bx-menu").style="color:white;z-index: 10;"
         }else{
             document.querySelector("#subscribes_Modal").style="position: fixed;left: 0px;"
             document.querySelector("#mediaNavbar").style="position: fixed;left:-100%;background:none;"
+            document.querySelector(".bx-menu").style="color:black;z-index: 0;"
         }
       }
     
