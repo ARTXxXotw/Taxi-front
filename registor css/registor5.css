@@ -13,7 +13,7 @@
 @media (max-width:501px) {
     .registor5-kotta{
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -45,7 +45,7 @@ transition: 0.5s;
  }
  .registor5-ichi button{
     width: 100%;
-height: 70px;
+height: 75px;
 border-radius: 30px;
 background: #FFE100;
 border: none;
@@ -57,6 +57,7 @@ font-size: 4vw;
 font-weight: 600;
 text-align: center;
 transition: 0.5s;
+cursor: pointer;
  }
  .registor5-ichi{
     width: 80%;
