@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
+body{
+  display: none;
+}
+
+
 @media (max-width: 501px) {
+  body{
+    display: block;
+  }
   .navbar {
     width: 98%;
     display: flex;
@@ -10,6 +18,9 @@
   }
   .navbar i {
     font-size: 30px;
+    cursor: pointer;
+    position: relative;
+    
   }
   .navbar .logoImage {
     width: 84px;
@@ -50,8 +61,8 @@
     overflow: hidden;
   }
   .card_Menu_div_img img {
-    height: 100%;
     width: 100%;
+    height: 100%;
   }
   .card_Menu {
     width: 90%;
@@ -60,17 +71,18 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin: auto;
+    gap: 10px;
   }
   .div_button_Main {
-    width: 90%;
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #e8e8e8;
     border-radius: 20px;
     margin: auto;
-    padding-right: 10px;
-    padding-left: 10px;
+    overflow: hidden;
+    margin-top: 7%;
   }
   .div_button_Main h1 {
     color: #000;
@@ -81,5 +93,204 @@
     line-height: normal;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-left: -20px;
+  }
+  .div_button_Main img {
+    width: 50px;
+  }
+  .div_button_Main i {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+  .div_button_adress_Main_div {
+    width: 40%;
+    border-radius: 20px;
+    background: #e8e8e8;
+    padding: 10px;
+  }
+  .div_button_adress_Main_div h1 {
+    text-align: center;
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .div_button_adress_Main_div p {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    min-height: 50px;
+  }
+  .main_location img {
+    width: 32px;
+    height: 32px;
+    margin-top: 5px;
+  }
+  .main_location {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .div_button_adress_Main {
+    width: 95%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 7%;
+  }
+  .media_Menu_navbar {
+    width: 100%;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.4s;
+  }
+  .media_Menu_navbar_scroll{
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+  }
+  .media_Menu_navbar_modal {
+    width: 294px;
+    margin-bottom: 100px;
+    padding-bottom: 35px;
+    background-color: #fff;
+    border-radius: 0px 40px 40px 0px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .media_Menu_navbar_modal_div_user {
+    width: 100%;
+    min-height: 117px;
+    /* background-color: #fff; */
+    border-radius: 0px 40px 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 0;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .media_Menu_navbar_modal_subscribe img {
+    width: 47px;
+    height: 47px;
+  }
+  .media_Menu_navbar_modal_div_user img {
+    width: 52px;
+    height: 52px;
+    margin-left: 25px;
+  }
+  .media_Menu_navbar_modal_div_user_div {
+    display: block;
+  }
+  .media_Menu_navbar_modal_div_user_div h1 {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0px;
+  }
+  .media_Menu_navbar_modal_div_user_div p {
+    color: #777;
+    font-family: Yandex Sans Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 0;
+  }
+  .media_Menu_navbar_modal_subscribe {
+    width: 94%;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0px 40px 40px 0px;
+    background: #ffe500;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 14px;
+    padding-bottom: 10px;
+  }
+  .media_Menu_navbar_modal_subscribe h1 {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .media_Menu_navbar_modal_subscribe button {
+    width: 49px;
+    height: 28px;
+    border-radius: 10px;
+    border: 1px solid #7b7878;
+    background: none;
+    color: #7b7878;
+  }
+  .media_Menu_navbar_modal_text {
+    width: 90%;
+    display: block;
+    padding: 7px;
+    margin-top: 15px;
+    margin-bottom: 90px;
+  }
+  .media_Menu_navbar_modal_text h1 {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 7px;
+  }
+  .media_Menu_navbar_modal_text_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .media_Menu_navbar_modal_text_div img {
+    width: 33px;
+    height: 33px;
+  }
+  .media_Menu_navbar_modal_text_line {
+    width: 100%;
+    height: 1px;
+    background-color: #bdb9b9;
+  }
+  .subscribes_Modal{
+    width: 100%;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #5E5E5E73;
+  }
+  
+
+
+
+
+
+}
+
+@media (max-width: 361px) {
+  .card_Menu_div {
+    width: 130px;
+    display: block;
   }
 }

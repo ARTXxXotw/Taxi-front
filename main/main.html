@@ -6,11 +6,11 @@
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./main.css">
-    
+    <link rel="stylesheet" href="../fonts/stylesheet.css">
 </head>
 <body>
     <div class="navbar">
-        <i class='bx bx-menu'></i>
+        <i onclick="MediaOpenToClose()" class='bx bx-menu'></i>
         <img class="logoImage" src="../main img/naLetu_online_logo_01_б†в 2.svg" alt="">
         <img class="accauntImage" src="../main img/Account.svg" alt="">
     </div>
@@ -60,5 +60,108 @@
         <h1>Куда едем?</h1>
         <i class='bx bxs-chevron-right-circle'></i> 
     </div>
+
+    <div class="div_button_adress_Main">
+        <div class="div_button_adress_Main_div">
+            <h1>Адрес</h1>
+            <p>Время</p>
+            <div class="main_location">
+            <img src="../main img/Frame.svg" alt="">
+        </div>
+        </div>
+        <div class="div_button_adress_Main_div">
+            <h1>Адрес</h1>
+            <p>Время</p>
+            <div class="main_location">
+                <img src="../main img/Frame.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div  id="mediaNavbar" class="media_Menu_navbar">
+    <div class="media_Menu_navbar_scroll">
+    <div class="media_Menu_navbar_modal">
+     <div class="media_Menu_navbar_modal_div_user">
+       <img src="../main img/Account (1).svg" alt="">
+       <div class="media_Menu_navbar_modal_div_user_div">
+        <h1>Username</h1>
+        <p>+7 (999) 777 80 90</p>
+       </div>
+     </div>
+     <div onclick="SubscribesOpenToClose()" class="media_Menu_navbar_modal_subscribe">
+        <h1>Экономь с подпиской</h1>
+        <button>ВЫКЛ</button>
+     </div>
+     <div class="media_Menu_navbar_modal_text">
+        <div class="media_Menu_navbar_modal_text_line"></div>
+        <h1>Поездки</h1>
+        <div class="media_Menu_navbar_modal_text_line"></div>
+        <div class="media_Menu_navbar_modal_text_div"><h1>Способ оплаты</h1><img src="../main img/Frame (1).svg" alt=""></div>
+        <div class="media_Menu_navbar_modal_text_line"></div>
+        <h1>Настройки</h1>
+        <div class="media_Menu_navbar_modal_text_line"></div>
+        <h1>Поддержка</h1>
+        <div class="media_Menu_navbar_modal_text_line"></div>
+        <div class="media_Menu_navbar_modal_text_div"><h1>Стать водителем</h1><img src="../main img/Frame (2).svg" alt=""></div>
+        <div class="media_Menu_navbar_modal_text_line"></div>
+     </div>
+     <div class="media_Menu_navbar_modal_subscribe">
+        <h1>Получить подарок</h1>
+        <img src="../main img/Frame (3).svg" alt="">
+     </div>
+    </div>
+    </div>
+    </div>
+
+    <div id="subscribes_Modal" class="subscribes_Modal">
+    <div class="subscribes_Modal_arrow"><i class='bx bx-chevron-left'></i></div>
+    <div class="subscribes_Modal_div">
+        <h1>Подписки</h1>
+        <p>Хотите экономить на каждой поездке во всех агрегаторах ? Выберите подходящий тариф и оформите подписку. <span>Обратите внимание!</span> Скидки будут доступны только при выборе безналичного способа оплаты. Скидка на наличные не распространяется.</p>
+        <div class="subscribes_Modal_div_card_big">
+            <div class="subscribes_Modal_div_card_big_div">
+                <div class="subscribes_Modal_div_card_big_div_emblema">Lite</div>
+                <h1>1 ₽ / мес</h1>
+                <p>Скидки до 3-х дней в неделю, кроме пт-сб</p>
+            </div>
+        </div>
+        <h1>Что дает подписка ?</h1>
+        <div class="subscribes_Modal_div_subscribes">
+            <div class="subscribes_Modal_div_subscribes_card">
+                <img src="../main img/Frame (3).svg" alt="">
+                <p>Попробуй подписку первые 30 дней за 1 ₽, далее 99 ₽ / мес.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+      function MediaOpenToClose(){
+        if (document.querySelector("#mediaNavbar").style.left=="0px") {
+            document.querySelector("#mediaNavbar").style="position: fixed;left:-100%;background:none;"
+            document.querySelector(".bx-menu").style="color:#000;"
+            document.querySelector("body").style="overflow: scroll;"
+            document.querySelector(".bx-menu").style="color:black;z-index: 0;"
+        }else{
+            document.querySelector("#mediaNavbar").style="position: fixed;left:0;background-color: #5E5E5E73;"
+            document.querySelector("body").style="overflow: hidden;"
+            document.querySelector(".bx-menu").style="color:white;z-index: 10;"
+
+        }
+      }
+      function SubscribesOpenToClose(){
+        if (document.querySelector("#subscribes_Modal").style.left=="0px") {
+            document.querySelector("#subscribes_Modal").style="position: fixed;left: -100%;"
+            document.querySelector("#mediaNavbar").style="position: fixed;left:0;background-color: #5E5E5E73;"
+        }else{
+            document.querySelector("#subscribes_Modal").style="position: fixed;left: 0px;"
+            document.querySelector("#mediaNavbar").style="position: fixed;left:-100%;background:none;"
+        }
+      }
+    
+
+    </script>
+
 </body>
 </html>
