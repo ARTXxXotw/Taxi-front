@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
-body{
+body {
   display: none;
 }
 
-
 @media (max-width: 501px) {
-  body{
+  body {
     display: block;
   }
   .navbar {
@@ -20,7 +19,6 @@ body{
     font-size: 30px;
     cursor: pointer;
     position: relative;
-    
   }
   .navbar .logoImage {
     width: 84px;
@@ -158,7 +156,7 @@ body{
     right: 0;
     transition: 0.4s;
   }
-  .media_Menu_navbar_scroll{
+  .media_Menu_navbar_scroll {
     overflow: scroll;
     width: 100%;
     height: 100%;
@@ -271,21 +269,280 @@ body{
     height: 1px;
     background-color: #bdb9b9;
   }
-  .subscribes_Modal{
+  .subscribes_Modal {
     width: 100%;
     position: fixed;
     left: -100%;
     top: 0;
     bottom: 0;
     right: 0;
-    background-color: #5E5E5E73;
+    background-color: #5e5e5e73;
+    overflow: hidden;
+    overflow: scroll;
   }
-  
 
+  .subscribes_Modal_arrow {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+    margin-left: 14.7px;
+    margin-top: 17px;
+  }
+  .subscribes_Modal_arrow i {
+    color: #535353;
+    font-size: 22px;
+  }
+  .subscribes_Modal_div {
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 40px 40px 0px 0px;
+    background: #fff;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .subscribes_Modal_div h1 {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .subscribes_Modal_div p {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .subscribes_Modal_div p span {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .subscribes_Modal_div_card_big_div {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    width: 100px;
+    min-width: 100px;
+    border-radius: 20px;
+    background: linear-gradient(rgba(158, 255, 203, 1), rgba(0, 255, 10, 1));
+  }
+  .subscribes_Modal_div_card_big_div:nth-child(2) {
+    background: #fff !important;
+    border: 2px solid rgb(255, 0, 247);
+  }
+  .subscribes_Modal_div_card_big_div:nth-child(3) {
+    background: #fff !important;
+    border: 2px solid rgb(179, 0, 255);
+  }
+  .subscribes_Modal_div_card_big_div_emblema {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: 0;
+    padding: 4px 8px 4px 8px;
+    background: #fff;
+  }
 
-
-
-
+  .subscribes_Modal_div_card_big_div h1 {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0;
+    margin-top: 5px;
+  }
+  .subscribes_Modal_div_card_big_div p {
+    color: #535353;
+    font-family: Yandex Sans Text;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    margin-top: 5px;
+  }
+  .subscribes_Modal_div_card_big {
+    width: 93%;
+    margin-left: auto;
+    overflow: scroll;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 15px;
+    /* padding-right: 25px; */
+  }
+  .subscribes_Modal_div_subscribes {
+    /* width: 100%; */
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+  }
+  .subscribes_Modal_div_subscribes_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px 23px 15px 23px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .subscribes_Modal_div_subscribes_card img {
+    width: 32px;
+    height: 32px;
+  }
+  .subscribes_Modal_div_subscribes_card p {
+    padding: 0;
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .trips_Modal {
+    width: 100%;
+    background-color: #5e5e5e73;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: scroll;
+  }
+  .trips_Modal_big {
+    height: 100%;
+    margin-top: 25px;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 40px 40px 0px 0px;
+    background: #fff;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .trips_Modal_big h1 {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .trips_Modal_big_button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 15px; */
+    margin-bottom: 30px;
+  }
+  .trips_Modal_big_button button {
+    padding: 15px 20px 15px 20px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: #ffe100;
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .trips_Modal_big_card {
+    display: block;
+    border-radius: 20px;
+    border: 5px solid #ffe100;
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+  }
+  .trips_Modal_big_card h1 {
+    color: #000;
+    text-align: right;
+    font-family: Yandex Sans Text;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .trips_Modal_big_card_text_one {
+    width: 80%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 18px;
+  }
+  .trips_Modal_big_card_text_one p {
+    color: #949191;
+    font-family: Yandex Sans Text;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .trips_Modal_big_card_text_two{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #949191;
+    margin-bottom: 20px;
+  }
+  .trips_Modal_big_card_text_two_star{
+    display: flex;
+   align-items: center;
+   gap: 1px;
+  }
+  .trips_Modal_big_card_text_two_star i{
+    font-size: 18px;
+    color: rgba(255, 225, 0, 1);
+  }
 }
 
 @media (max-width: 361px) {

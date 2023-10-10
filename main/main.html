@@ -94,7 +94,7 @@
      </div>
      <div class="media_Menu_navbar_modal_text">
         <div class="media_Menu_navbar_modal_text_line"></div>
-        <h1>Поездки</h1>
+        <h1 onclick="TripsOpenToClose()" >Поездки</h1>
         <div class="media_Menu_navbar_modal_text_line"></div>
         <div class="media_Menu_navbar_modal_text_div"><h1>Способ оплаты</h1><img src="../main img/Frame (1).svg" alt=""></div>
         <div class="media_Menu_navbar_modal_text_line"></div>
@@ -114,15 +114,25 @@
     </div>
 
     <div id="subscribes_Modal" class="subscribes_Modal">
-    <div class="subscribes_Modal_arrow"><i class='bx bx-chevron-left'></i></div>
+    <div onclick="SubscribesOpenToClose()" class="subscribes_Modal_arrow"><i class='bx bx-chevron-left'></i></div>
     <div class="subscribes_Modal_div">
         <h1>Подписки</h1>
-        <p>Хотите экономить на каждой поездке во всех агрегаторах ? Выберите подходящий тариф и оформите подписку. <span>Обратите внимание!</span> Скидки будут доступны только при выборе безналичного способа оплаты. Скидка на наличные не распространяется.</p>
+        <p>Хотите экономить на каждой поездке во всех агрегаторах ? Выберите подходящий тариф и оформите подписку.<br><br><span>Обратите внимание!</span> Скидки будут доступны только при выборе безналичного способа оплаты. Скидка на наличные не распространяется.</p>
         <div class="subscribes_Modal_div_card_big">
             <div class="subscribes_Modal_div_card_big_div">
-                <div class="subscribes_Modal_div_card_big_div_emblema">Lite</div>
+                <button  class="subscribes_Modal_div_card_big_div_emblema">Lite</button>
                 <h1>1 ₽ / мес</h1>
                 <p>Скидки до 3-х дней в неделю, кроме пт-сб</p>
+            </div>
+            <div class="subscribes_Modal_div_card_big_div">
+                <button style="background-color:#fed0c2 ;" class="subscribes_Modal_div_card_big_div_emblema">Basic</button>
+                <h1>199 ₽ / мес</h1>
+                <p>Скидки до 5 дней в неделю и в выходные</p>
+            </div>
+            <div class="subscribes_Modal_div_card_big_div">
+                <button style="background-color: rgb(207, 158, 253);" class="subscribes_Modal_div_card_big_div_emblema"><img src="../main img/Group 9.svg" alt="">Premium</button>
+                <h1>299 ₽ / мес</h1>
+                <p>Скидки каждый день, и еще больше в выходные</p>
             </div>
         </div>
         <h1>Что дает подписка ?</h1>
@@ -131,8 +141,39 @@
                 <img src="../main img/Frame (3).svg" alt="">
                 <p>Попробуй подписку первые 30 дней за 1 ₽, далее 99 ₽ / мес.</p>
             </div>
+            <div class="subscribes_Modal_div_subscribes_card">
+                <img src="../main img/Frame (3).svg" alt="">
+                <p>Попробуй подписку первые 30 дней за 1 ₽, далее 99 ₽ / мес.</p>
+            </div>
+            <div class="subscribes_Modal_div_subscribes_card">
+                <img src="../main img/Frame (3).svg" alt="">
+                <p>Попробуй подписку первые 30 дней за 1 ₽, далее 99 ₽ / мес.</p>
+            </div>
+            <div class="subscribes_Modal_div_subscribes_card">
+                <img src="../main img/Frame (3).svg" alt="">
+                <p>Попробуй подписку первые 30 дней за 1 ₽, далее 99 ₽ / мес.</p>
+            </div>
+            <div class="subscribes_Modal_div_subscribes_card">
+                <img src="../main img/Frame (3).svg" alt="">
+                <p>Попробуй подписку первые 30 дней за 1 ₽, далее 99 ₽ / мес.</p>
+            </div>
         </div>
     </div>
+    </div>
+
+    <div id="trips_Modal" class="trips_Modal">
+        <div onclick="TripsOpenToClose()"  class="subscribes_Modal_arrow"><i class='bx bx-chevron-left'></i></div>
+        <div class="trips_Modal_big">
+            <h1>Поездки</h1>
+            <div class="trips_Modal_big_button">
+                <button>История поездки</button>
+                <button>Запланированные</button>
+            </div>
+            <div class="trips_Modal_big_card">
+                <div class="trips_Modal_big_card_text_one"><p>02.10.2023 16:31</p><h1>175 ₽</h1></div>
+                <div class="trips_Modal_big_card_text_two"><div class="trips_Modal_big_card_text_two_star"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div><h1>Наличными</h1></div>
+            </div>
+        </div>
     </div>
 
 
@@ -157,6 +198,18 @@
             document.querySelector(".bx-menu").style="color:white;z-index: 10;"
         }else{
             document.querySelector("#subscribes_Modal").style="position: fixed;left: 0px;"
+            document.querySelector("#mediaNavbar").style="position: fixed;left:-100%;background:none;"
+            document.querySelector(".bx-menu").style="color:black;z-index: 0;"
+        }
+      }
+
+      function TripsOpenToClose(){
+        if (document.querySelector("#trips_Modal").style.left=="0px") {
+            document.querySelector("#trips_Modal").style="position: fixed;left: -100%;"
+            document.querySelector("#mediaNavbar").style="position: fixed;left:0;background-color: #5E5E5E73;"
+            document.querySelector(".bx-menu").style="color:white;z-index: 10;"
+        }else{
+            document.querySelector("#trips_Modal").style="position: fixed;left: 0px;"
             document.querySelector("#mediaNavbar").style="position: fixed;left:-100%;background:none;"
             document.querySelector(".bx-menu").style="color:black;z-index: 0;"
         }
