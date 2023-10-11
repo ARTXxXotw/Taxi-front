@@ -53,7 +53,7 @@ bottom: 0;
 .map-img span{
     font-family: 'Gabarito', cursive;
     font-family: 'Inter', sans-serif;
-font-size: 24px;
+font-size: 23px;
 font-weight: 600;
 line-height: 30px;
 letter-spacing: 0em;
@@ -66,6 +66,9 @@ height: 52px;
 border-radius: 20px;
 background-color: #E8E8E8;
 margin-bottom: 15px;
+display: flex;
+align-items: center;
+text-align: center;
 }
 .btn-map-d_f{
     display: flex;
@@ -103,17 +106,77 @@ top:10px;
     font-family: 'Gabarito', cursive;
     font-family: 'Inter', sans-serif;
 font-size: 12px;
-font-weight: 500;
+font-weight: 600;
 line-height: 15px;
 letter-spacing: 0em;
 text-align: left;
 position: relative;
-top: -19px;
+top: -17px;
 left: 10px;
 }
 .btn-map-2 img{
     position: relative;
     top:20px;
     left: 26px;
+}
+
+.btn-map-3 p{
+    font-family: 'Gabarito', cursive;
+    font-family: 'Inter', sans-serif;
+font-size: 12px;
+font-weight: 600;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+position: relative;
+left: 50px;
+top:10px;
+}
+.btn-map-3 span{
+    font-family: 'Gabarito', cursive;
+    font-family: 'Inter', sans-serif;
+font-size: 12px;
+font-weight: 600;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+position: relative;
+top: -17px;
+left: 15px;
+}
+.btn-map-3 img{
+    position: relative;
+    top:20px;
+    left: 85px;
+}
+.btn-box-icon-joy{
+    width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: black;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+.btn-map-1 p{
+    font-family: 'Gabarito', cursive;
+    font-family: 'Inter', sans-serif;
+font-size: 15px;
+font-weight: 600;
+line-height: 19px;
+letter-spacing: 0em;
+position: relative;
+width: 90%;
+}
+.kichkina-zadaz{
+    width: 24px;
+height: 24px;
+border-radius: 50%;
+background: #FFFFFF;
+position: absolute;
+top: 15px;
+left: 15px;
+cursor: pointer;
 }
 }
