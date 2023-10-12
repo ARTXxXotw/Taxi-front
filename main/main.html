@@ -409,12 +409,12 @@
             <div class="ujii">
                 <h2>Поддержка</h2>
             </div>
-            <div onclick="BosIchi2()" class="bir-qator-block">
+            <div onclick="Help2OpenToClose()" class="bir-qator-block">
                 <div class="ssjj">
                     <h3>Поддержка</h3>
                    </div>
             </div>
-            <div onclick="BosIchi2()" class="bir-qator-block">
+            <div onclick="Help1OpenToClose()" class="bir-qator-block">
                 <div class="ssjj">
                     <h3>Написать в поддержку</h3>
                    </div>
@@ -449,68 +449,68 @@
         <div class="vaprosi-mm-ici">
             <h2>Вопросы и ответы</h2>
             <div class="vaprosi-mm-block">
-                <div class="lsllsls">
+                <div onclick="HelpOpen10()" class="lsllsls">
                     <p>Как работает naLetu для <br> физических лиц ?</p>
                     <box-icon name='chevron-right'></box-icon>
                 </div>
             </div>
             <div class="vaprosi-mm-block">
-                <div class="lsllsls">
+                <div onclick="HelpOpen11()" class="lsllsls">
                     <p>Как работает naLetu для <br> физических лиц ?</p>
                     <box-icon name='chevron-right'></box-icon>
                 </div>
             </div>
             <div class="vaprosi-mm-block1">
-                <div class="lsllsls">
+                <div onclick="HelpOpen12()" class="lsllsls">
                     <p>Как работают скидки на поездки <br> (по промо или реферальному <br> коду) ?</p>
                     <box-icon name='chevron-right'></box-icon>
                 </div>
             </div>
             <div class="vaprosi-mm-block">
-                <div class="lsllsls">
+                <div onclick="HelpOpen13()" class="lsllsls">
                     <p>Как происходит оплата ?</p>
                     <box-icon name='chevron-right'></box-icon>
                 </div>
             </div>
             <div class="vaprosi-mm-block">
-                <div class="lsllsls">
+                <div onclick="HelpOpen14()" class="lsllsls">
                     <p>Что будет за отмену <br> поездки ?</p>
                     <box-icon name='chevron-right'></box-icon>
                 </div>
             </div>
             <div class="vaprosi-mm-block1">
-                <div class="lsllsls">
+                <div onclick="HelpOpen15()" class="lsllsls">
                     <p>Что будет, если водитель приехал <br> на место подачи, а я хочу <br> отменить поездку</p>
                     <box-icon name='chevron-right'></box-icon>
                 </div>
             </div>
             <div class="vaprosi-mm-block2">
-                <div class="lsllsls">
+                <div onclick="HelpOpen16()" class="lsllsls">
                     <p>Если водитель приехал раньше на <br> запланированную поездку, <br> возьмут ли с меня деньги за <br> ожидание? (для юридических <br> лиц)</p>
                     <box-icon name='chevron-right'></box-icon>
                 </div>
             </div>
             <div class="vaprosi-mm-block2">
-                <div class="lsllsls">
+                <div onclick="HelpOpen16_5()" class="lsllsls">
                     <p>В поездке на текущее время, водитель <br> приехал раньше обещанного времени, <br> возьмут ли с меня деньги за <br> дополнительное ожидание? (для <br> юридических лиц)</p>
                     <box-icon name='chevron-right'></box-icon>
                 </div>
             </div>
 
             <div class="vaprosi-mm-block">
-                <div class="lsllsls">
+                <div onclick="HelpOpen17()" class="lsllsls">
                     <p>Взымается ли плата за простой в <br> пробках?</p>
                     <box-icon name='chevron-right'></box-icon>
                 </div>
             </div>
             <div class="vaprosi-mm-block">
-                <div class="lsllsls">
+                <div onclick="HelpOpen18()" class="lsllsls">
                     <p>Как связаться с водителем после поездки <br> (оставленные вещи)?</p>
                     <box-icon name='chevron-right'></box-icon>
                 </div>
             </div>
             <div class="vaprosi-mm-block">
-                <div class="lsllsls">
+                <div onclick="HelpOpen19()" class="lsllsls">
                     <p>Как обратится в поддержку клиентов?</p>
                     <box-icon name='chevron-right'></box-icon>
                 </div>
@@ -601,6 +601,16 @@
         <div class="text-vapros">
             <h3>Если водитель приехал раньше на запланированную поездку, возьмут ли с меня деньги за ожидание? (для юридических лиц)</h3>
             <p>Нет, платное ожидание начнётся, только после 2-х минут от времени запланированной поездки</p>
+        </div>
+    </div>
+</div>
+<!-- 7.5 -->
+<div id="vaprosi-mm-textla6_5" class="vaprosi-mm-textla6">
+    <div class="vaprosi-mm-ici">
+        <h2>Вопросы и ответы</h2>
+        <div class="text-vapros">
+            <h3>В поездке на текущее время, водитель приехал раньше обещанного времени, возьмут ли с меня деньги за дополнительное ожидание? (для юридических лиц)</h3>
+            <p>Нет, платное ожидание начнётся, только после 2-х минут от обещанного времени прибытия водителем.</p>
         </div>
     </div>
 </div>
@@ -731,6 +741,24 @@
             document.querySelector(".bx-menu").style="color:black;z-index: 0;"
         }
       }
+      function Help1OpenToClose(){
+        if (document.querySelector(".nastroyka-blat1").style.display=="block") {
+            document.querySelector(".nastroyka-blat1").style="display: none;"
+            document.querySelector("#nastroyka-blat").style="display:block"
+        }else{
+            document.querySelector(".nastroyka-blat1").style="display: block;"
+            document.querySelector("#nastroyka-blat").style="display:none"
+        }
+      }
+      function Help2OpenToClose(){
+        if (document.querySelector(".nastroyka-blat1").style.display=="block") {
+            document.querySelector(".nastroyka-blat1").style="display: none;"
+            document.querySelector("#nastroyka-blat").style="display:block"
+        }else{
+            document.querySelector(".vaprosi-mm").style="display: block;"
+            document.querySelector(".nastroyka-blat1").style="display:none"
+        }
+      }
 
 
     
@@ -749,7 +777,7 @@
       function ochil1(){
         if (document.querySelector(".nastroyka-blat_text").style.display=="block") {
             document.querySelector(".nastroyka-ichi").style="display:block"
-        document.querySelector(".nastroyka-blat_text").style="display:none"
+            document.querySelector(".nastroyka-blat_text").style="display:none"
         }else{
          document.querySelector(".nastroyka-blat").style=`display:none`
         document.querySelector("#mediaNavbar").style="position: fixed;left:0px;background:#5E5E5E73;"
@@ -764,10 +792,120 @@
         document.querySelector(".bx-menu").style="color:black;z-index: 0;"  
       }
       function CloseHelp(){
-        document.querySelector("#nastroyka-blat").style=`display:none`
-        document.querySelector("#mediaNavbar").style="position: fixed;left:0px;background:#5E5E5E73;"
-        document.querySelector("#orqa-fon").style=`display:none`
-        document.querySelector(".bx-menu").style="color:white;z-index: 10;"  
+        if(document.querySelector(".nastroyka-blat1").style.display=="block"){
+        document.querySelector(".nastroyka-blat1").style="display:none"
+        document.querySelector("#nastroyka-blat").style="display:block"
+        document.querySelector("#orqa-fon").style=`display:block`
+        document.querySelector(".bx-menu").style="color:black;z-index: 0;"  
+        }else{
+        if (document.querySelector(".vaprosi-mm").style.display=="block") {
+            document.querySelector("#nastroyka-blat").style="display:block"
+            document.querySelector(".vaprosi-mm").style="display: none;"
+        }else{
+            if (document.querySelector(".vaprosi-mm-textla").style.display=="block") {
+                document.querySelector(".vaprosi-mm").style="display: block;"
+                document.querySelector(".vaprosi-mm-textla").style="display: none;"
+            }else{
+                if (document.querySelector(".vaprosi-mm-textla1").style.display=="block") {
+                    document.querySelector(".vaprosi-mm").style="display: block;"
+                    document.querySelector(".vaprosi-mm-textla1").style="display: none;"
+                }else{
+                  if(document.querySelector(".vaprosi-mm-textla2").style.display=="block"){
+                    document.querySelector(".vaprosi-mm").style="display: block;"
+                    document.querySelector(".vaprosi-mm-textla2").style="display: none;"
+                  }else{
+                    if(document.querySelector(".vaprosi-mm-textla3").style.display=="block"){
+                        document.querySelector(".vaprosi-mm").style="display: block;"
+                        document.querySelector(".vaprosi-mm-textla3").style="display: none;"
+                    }else{
+                    if(document.querySelector(".vaprosi-mm-textla4").style.display=="block"){
+                        document.querySelector(".vaprosi-mm").style="display: block;"
+                        document.querySelector(".vaprosi-mm-textla4").style="display: none;"
+                    }else{
+                        if(document.querySelector(".vaprosi-mm-textla5").style.display=="block"){
+                            document.querySelector(".vaprosi-mm").style="display: block;"
+                            document.querySelector(".vaprosi-mm-textla5").style="display: none;"
+                        }else{
+                            if(document.querySelector(".vaprosi-mm-textla6").style.display=="block"){
+                                document.querySelector(".vaprosi-mm").style="display: block;"
+                                document.querySelector(".vaprosi-mm-textla6").style="display: none;"
+                            }else{
+                                if(document.querySelector(".vaprosi-mm-textla7").style.display=="block"){
+                                    document.querySelector(".vaprosi-mm").style="display: block;"
+                                    document.querySelector(".vaprosi-mm-textla7").style="display: none;"
+                                }else{
+                                    if(document.querySelector(".vaprosi-mm-textla8").style.display=="block"){
+                                        document.querySelector(".vaprosi-mm").style="display: block;"
+                                        document.querySelector(".vaprosi-mm-textla8").style="display: none;"
+                                    }else{
+                                     if(document.querySelector(".vaprosi-mm-textla9").style.display=="block"){
+                                        document.querySelector(".vaprosi-mm").style="display: block;"
+                                        document.querySelector(".vaprosi-mm-textla9").style="display: none;"
+                                     }else{
+                                        if(document.querySelector("#vaprosi-mm-textla6_5").style.display=="block"){
+                                            document.querySelector(".vaprosi-mm").style="display: block;"
+                                            document.querySelector("#vaprosi-mm-textla6_5").style="display: none;"
+                                        }else{
+                                         document.querySelector("#nastroyka-blat").style=`display:none`
+                                         document.querySelector("#mediaNavbar").style="position: fixed;left:0px;background:#5E5E5E73;"
+                                         document.querySelector("#orqa-fon").style=`display:none`
+                                         document.querySelector(".bx-menu").style="color:white;z-index: 10;" 
+                                        }}
+                                }
+                                    }
+                }
+                }
+                  }
+                  }
+                  }
+        
+        }
+       }
+       }
+      }}
+      function HelpOpen10(){
+        document.querySelector(".vaprosi-mm").style="display: none;"
+        document.querySelector(".vaprosi-mm-textla").style="display: block;"
+      }
+      function HelpOpen11(){
+        document.querySelector(".vaprosi-mm").style="display: none;"
+        document.querySelector(".vaprosi-mm-textla1").style="display: block;"
+      }
+      function HelpOpen12(){
+        document.querySelector(".vaprosi-mm").style="display: none;"
+        document.querySelector(".vaprosi-mm-textla2").style="display: block;"
+      }
+      function HelpOpen13(){
+        document.querySelector(".vaprosi-mm").style="display: none;"
+        document.querySelector(".vaprosi-mm-textla3").style="display: block;"
+      }
+      function HelpOpen14(){
+        document.querySelector(".vaprosi-mm").style="display: none;"
+        document.querySelector(".vaprosi-mm-textla4").style="display: block;"
+      }
+      function HelpOpen15(){
+        document.querySelector(".vaprosi-mm").style="display: none;"
+        document.querySelector(".vaprosi-mm-textla5").style="display: block;"
+      }
+      function HelpOpen16(){
+        document.querySelector(".vaprosi-mm").style="display: none;"
+        document.querySelector(".vaprosi-mm-textla6").style="display: block;"
+      }
+      function HelpOpen16_5(){
+        document.querySelector(".vaprosi-mm").style="display: none;"
+        document.querySelector("#vaprosi-mm-textla6_5").style="display: block;"
+      }
+      function HelpOpen17(){
+        document.querySelector(".vaprosi-mm").style="display: none;"
+        document.querySelector(".vaprosi-mm-textla7").style="display: block;"
+      }
+      function HelpOpen18(){
+        document.querySelector(".vaprosi-mm").style="display: none;"
+        document.querySelector(".vaprosi-mm-textla8").style="display: block;"
+      }
+      function HelpOpen19(){
+        document.querySelector(".vaprosi-mm").style="display: none;"
+        document.querySelector(".vaprosi-mm-textla9").style="display: block;"
       }
       function BosIchi(){
         document.querySelector(".nastroyka-ichi").style="display:none"
