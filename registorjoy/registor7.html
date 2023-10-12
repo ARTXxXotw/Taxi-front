@@ -11,7 +11,7 @@
     <div class="registor7-kotta">
         <div class="registor7-ichi">
             <div class="registor-d_f">
-                <div class="registor6-krug-nazad">
+                <div class="registor6-krug-nazad" onclick="orqaga()">
                     <box-icon name='chevron-left' size="50px"></box-icon>
                 </div>
                 <span>Код подтверждения</span>
@@ -33,13 +33,21 @@
             <div class="registor6-pas-text-btn">
                 <p>Нажимая “Продолжить” Вы принимаете  <br>
                     условия <span> Пользовательского соглашения</span></p> 
-                    <button>Продолжить</button>
+                    <button onclick="user()">Продолжить</button>
                </div>
         </div>
     </div>
 
 
 
+    <script>
+        function orqaga(){
+            window.location="../registorjoy/registor6.html"
+        }
+        function user(){
+            window.location="../main/main.html"
+        }
+    </script>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 

@@ -126,6 +126,11 @@ font-weight: 600;
 text-align: center;
 transition: 0.5s;
 }
+.registor4-btn-but-joy a{
+    text-decoration: none;
+outline: none;
+color: black;
+}
 .registor4-btn-but-joy button:hover{
 background-color: #000000;
 color: white;
