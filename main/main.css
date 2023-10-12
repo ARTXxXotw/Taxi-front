@@ -316,7 +316,7 @@ body {
   .subscribes_Modal {
     width: 100%;
     position: fixed;
-    left: -100%;
+    left: -105%;
     top: 0;
     bottom: 0;
     right: 0;
@@ -501,7 +501,7 @@ body {
     width: 100%;
     background-color: #5e5e5e73;
     position: fixed;
-    left: -100%;
+    left: -105%;
     top: 0;
     bottom: 0;
     right: 0;
@@ -528,6 +528,93 @@ body {
     font-weight: 500;
     line-height: normal;
   }
+  .pay_Modal_div_big_two {
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+  }
+  .pay_Modal_div_big_two img {
+    width: 120px;
+  }
+  .pay_Modal_div_big_two_text h2 {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 2px;
+  }
+  .pay_Modal_div_big_two_text h1 {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .pay_Modal_div_big_two_text p {
+    color: #979595;
+    font-family: Yandex Sans Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+  }
+  .pay_Modal_div_big_two_text p i {
+    font-size: 23px;
+  }
+  .pay_Modal_div_big_two_button {
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 20px;
+    background: #ecfcff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .pay_Modal_div_big_two_button_flex {
+    padding: 20px 15px 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pay_Modal_div_big_two_button_flex1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .pay_Modal_div_big_two_button_flex img {
+    width: 25px;
+    height: 25px;
+  }
+  .pay_Modal_div_big_two_button_flex1 img {
+    width: 46px;
+    height: 46px;
+  }
+  .pay_Modal_div_big_two_button_flex1 h1 {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .pay_Modal_div_big_two_button_flex1 p {
+    color: #535353;
+    font-family: Yandex Sans Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 
   .trips_Modal_big_button {
     width: 100%;
@@ -537,7 +624,18 @@ body {
     /* gap: 15px; */
     margin-bottom: 30px;
   }
-
+  .pay_Modal_div_big_two_card {
+    width: 100%;
+    border-radius: 20px;
+    background: #ecfcff;
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .pay_Modal_div_big_two_card_text {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 25px;
+  }
   .trips_Modal_big_button button {
     padding: 15px 20px 15px 20px;
     border-radius: 20px;
@@ -550,6 +648,159 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+  }
+  .pay_Modal_div_big_two_card_text_one {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .pay_Modal_div_big_two_card_text_one img {
+    width: 46px;
+  }
+  .pay_Modal_div_big_two_card_text_one h1 {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .pay_Modal_div_big_two_card_text_two {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+  }
+  .pay_Modal_div_big_two_card_text_two p {
+    color: #535353;
+    font-family: Yandex Sans Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+    padding-left: 15px;
+  }
+  .pay_Modal_div_big_two_card_text_two input {
+    border-radius: 20px;
+    border: 1px solid #535353;
+    width: 93.5%;
+    background: #fff;
+    height: 44px;
+    padding-left: 20px;
+  }
+  .pay_Modal_div_big_two_card_text_two img {
+    width: 34px;
+    position: absolute;
+    right: 7px;
+    top: 29px;
+  }
+  .pay_Modal_div_big_two_card_text_three {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pay_Modal_div_big_two_card_text_three_div {
+    display: block;
+  }
+  .pay_Modal_div_big_two_card_text_three_div div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .pay_Modal_div_big_two_card_text_three_div p {
+    margin-bottom: 0;
+    color: #535353;
+    font-family: Yandex Sans Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 15px;
+  }
+  .pay_Modal_div_big_two_card_text_three_div_one p {
+    color: #535353;
+    font-family: Yandex Sans Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+    padding-left: 15px;
+  }
+  .pay_Modal_div_big_two_card_text_four {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 15px;
+    margin-top: 20px;
+  }
+  .pay_Modal_div_big_two_card_text_four img {
+    width: 15px;
+  }
+  .pay_Modal_div_big_two_card_text_four p {
+    color: #535353;
+    font-family: Yandex Sans Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .pay_Modal_div_big_two_card_text_five {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 11px;
+    padding-bottom: 20px;
+  }
+  .pay_Modal_div_big_two_card_text_five input {
+    width: 15px;
+    height: 15px;
+  }
+  .pay_Modal_div_big_two_card_text_five p {
+    color: #535353;
+    font-family: Yandex Sans Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .pay_Modal_div_big_two_card_text_four p span {
+    color: #535353;
+    font-family: Yandex Sans Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+  #pay_Modal1 {
+    overflow: hidden;
+  }
+  #pay_Modal_div {
+    height: 82vh;
+    overflow: scroll;
+  }
+  .pay_Modal_div_big_two_card_text_three_div_one input {
+    width: 64px;
+    height: 44px;
+    border-radius: 20px;
+    border: 1px solid #535353;
+    background: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+  .pay_Modal_div_big_two_card_text_three_div div input {
+    width: 64px;
+    height: 44px;
+    border-radius: 20px;
+    border: 1px solid #535353;
+    background: #fff;
+    font-size: 20px;
+    text-align: center;
   }
 
   .trips_Modal_big_card {
@@ -684,7 +935,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 89%;
-    padding-left:20px;
+    padding-left: 20px;
     padding-right: 10px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -809,7 +1060,7 @@ body {
 
   .bir-qator-block h3 {
     width: 100%;
-    font-family: "Gabarito", cursive;
+    font-family: "Gab<div style="margin-bottom: 100px;"></div>arito", cursive;
     font-family: "Inter", sans-serif;
     font-size: 15px;
     font-weight: 600;
@@ -1271,6 +1522,266 @@ body {
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
+  }
+  .driver_Modal {
+    width: 100%;
+    position: fixed;
+    left: -105%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #5e5e5e73;
+  }
+  .driver_Modal_div {
+    margin-top: 30px;
+    height: 100vh;
+    width: 100%;
+    border-radius: 40px 40px 0px 0px;
+    background: #fff;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: scroll;
+  }
+  .driver_Modal_div_center {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+  }
+  .driver_Modal_div_center h1 {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .driver_Modal_div p {
+    color: #979595;
+    font-family: Yandex Sans Text;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 100px;
+  }
+  .driver_Modal_div_center p {
+    width: 85%;
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    text-align: start;
+    margin-bottom: 10px;
+  }
+  .driver_Modal_div_center_span {
+    height: 200px;
+  }
+  .driver_Modal_div_dumaloq_block {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .driver_Modal_div_dumaloq_block h1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffe500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .driver_Modal_div_dumaloq_block p {
+    color: #fff;
+    font-family: Yandex Sans Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .gift_Modal {
+    width: 100%;
+    position: fixed;
+    left: -105%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #5e5e5e73;
+  }
+  .gift_Modal_div {
+    height: 100vh;
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 40px 40px 0px 0px;
+    background: #fff;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: scroll;
+  }
+
+  .driver_Modal_div_center_span span {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .driver_Modal_div_center_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #d9d9d9;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 13px;
+  }
+  .driver_Modal_div_center_block h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: Yandex Sans Text;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .driver_Modal_div_center_block p {
+    margin-bottom: 0;
+    margin-top: 5px;
+    color: #979595;
+    font-family: Yandex Sans Text;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: start;
+  }
+  .driver_Modal_div_center_flex i {
+    font-size: 20px;
+  }
+  .driver_Modal_div_center_button {
+    width: 90%;
+    border-radius: 30px;
+    background: #ffe100;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .driver_Modal_div_center_button_text_block {
+    text-align: center;
+  }
+  .driver_Modal_div_center_button_text_block h1 {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .driver_Modal_div_center_button_text_block p {
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .gift_Modal_div h1 {
+    width: 100%;
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 30px;
+    /* margin: auto; */
+  }
+  .gift_Modal_div_center {
+    width: 85%;
+    margin: auto;
+  }
+  .gift_Modal_div button {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 20px;
+    background: #ffe500;
+    border: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #000;
+    text-align: center;
+    font-family: Yandex Sans Text;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .gift_Modal_div_center h2 {
+    color: #000;
+    text-align: center;
+    font-family: Yandex Sans Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 30px;
+  }
+  .gift_Modal_div_center h2 span {
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    background: #9effcb;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .gift_Modal_div img {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .gift_Modal_div_center p {
+    color: #949191;
+    font-family: Yandex Sans Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
+  }
+  .gift_Modal_div_center input {
+    padding-left: 15px;
+    width: 100%;
+    height: 50px;
+    padding-right: 60px;
+    border-radius: 20px;
+    border: 1px solid #535353;
+    color: #000;
+    font-family: Yandex Sans Text;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .gift_Modal_div_center div{
+    position: relative;
+    width: 75%;
+  }
+  .gift_Modal_div_center div img {
+    width: 30px;
+    border-radius: 10px;
+    border: 1px solid #535353;
+    padding: 5px;
+    position: absolute;
+    right: -65px;
+    top: 5.5px;
+    margin-top: 0;
   }
 }
 

@@ -102,10 +102,10 @@
         <div class="media_Menu_navbar_modal_text_line"></div>
         <h1 onclick="OpenHelp()">Поддержка</h1>
         <div class="media_Menu_navbar_modal_text_line"></div>
-        <div class="media_Menu_navbar_modal_text_div"><h1>Стать водителем</h1><img src="../main img/Frame (2).svg" alt=""></div>
+        <div onclick="DriverOpenToClose()" class="media_Menu_navbar_modal_text_div"><h1>Стать водителем</h1><img src="../main img/Frame (2).svg" alt=""></div>
         <div class="media_Menu_navbar_modal_text_line"></div>
      </div>
-     <div class="media_Menu_navbar_modal_subscribe">
+     <div onclick="GiftOpenToClose()" class="media_Menu_navbar_modal_subscribe">
         <h1>Получить подарок</h1>
         <img src="../main img/Frame (3).svg" alt="">
      </div>
@@ -218,9 +218,152 @@
             <div class="pay_Modal_div_small">
             <img src="../main img/Sub.svg" alt="">
             <div class="pay_Modal_div_card_one"><div><img src="../main img/Frame.svg" alt=""><h1>Наличные</h1></div><img src="../Image/Frame (1).svg" alt=""></div>
-            <div class="pay_Modal_div_card_two"><h1>Добавить банковскую карту</h1><img src="../Image/Frame (2).svg" alt=""></div></div>
+            <div onclick="Pay2OpenToClose()" class="pay_Modal_div_card_two"><h1>Добавить банковскую карту</h1><img src="../Image/Frame (2).svg" alt=""></div></div>
         </div>
     </div>
+
+    <div id="pay_Modal1" class="pay_Modal">
+        <div onclick="Pay2OpenToClose()"  class="subscribes_Modal_arrow"><i class='bx bx-chevron-left'></i></div>
+        <div id="pay_Modal_div" class="pay_Modal_div">
+            <div class="pay_Modal_div_big_two">
+                <img src="../Image/image 1.svg" alt="">
+                <div class="pay_Modal_div_big_two_text">
+                    <h2>НАЛЕТУ</h2>
+                    <h1>1 ₽</h1>
+                    <p>Завершите платёж в течение 9:52</p>
+                    <p>Детали платежа <i class='bx bx-chevron-down'></i></p>
+                </div>
+                <div class="pay_Modal_div_big_two_button">
+                    <div class="pay_Modal_div_big_two_button_flex">
+                        <div class="pay_Modal_div_big_two_button_flex1">
+                        <img src="../Image/Group 14.svg" alt="">
+                        <div>
+                            <h1>Сохранённые карты</h1>
+                            <p>Вход в ЮMoney для быстрой оплаты</p>
+                        </div>
+                        </div>
+                        <img src="../Image/Flat.svg" alt="">
+                    </div>
+                </div>
+                <div class="pay_Modal_div_big_two_card">
+                 <div class="pay_Modal_div_big_two_card_text">
+                    <div class="pay_Modal_div_big_two_card_text_one">
+                        <img src="../Image/Group 16.svg" alt="">
+                        <h1>Банковская карта</h1>
+                    </div>
+                    <div class="pay_Modal_div_big_two_card_text_two">
+                        <p>Номер карты</p>
+                        <input type="text">
+                        <img src="../Image/image 2.svg" alt="">
+                    </div>
+                    <div class="pay_Modal_div_big_two_card_text_three">
+                        <div class="pay_Modal_div_big_two_card_text_three_div">
+                            <p>Срок действия</p>
+                            <div>
+                                <input placeholder="MM" type="text">/
+                                <input placeholder="ГГ" type="text">
+                            </div>
+                        </div>
+                        <div class="pay_Modal_div_big_two_card_text_three_div_one">
+                            <p>Код</p>
+                            <input placeholder="CVC" type="text">
+                        </div>
+                    </div>
+                    <div class="pay_Modal_div_big_two_card_text_four">
+                        <img src="../Image/Group 23.svg" alt="">
+                        <p>Заплатив здесь, вы <span>разрешите автосписания</span></p>
+                    </div>
+                    <div class="pay_Modal_div_big_two_card_text_five">
+                        <input type="checkbox">
+                        <p>Нужна квитанция</p>
+                    </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver_Modal" class="driver_Modal">
+        <div onclick="DriverOpenToClose()"  class="subscribes_Modal_arrow"><i class='bx bx-chevron-left'></i></div>
+        <div class="driver_Modal_div">
+            <div class="driver_Modal_div_center">
+                <h1>Работа в такси с партнёрами naLetu +</h1>
+                <p>Можно получать до 7000 ₽ в день А ещё:</p>
+                <div class="driver_Modal_div_center_span" >
+                    <span>
+                        -старт за несколько часов; 
+                    </span><br>
+                    <span>
+                        -деньги сразу в заказах за наличные;
+                    </span><br>
+                    <span>
+                        -свободное расписание.
+                    </span>
+                </div>
+            </div>
+            <div class="driver_Modal_div_center_flex">
+                <div class="driver_Modal_div_center_block">
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit.</p>
+                </div>
+                <i class='bx bx-chevron-right' ></i>
+            </div>
+            <div onclick="Driver2OpenToClose()" class="driver_Modal_div_center_button">
+               <div class="driver_Modal_div_center_button_text_block">
+                <h1>Оставить заявку</h1>
+                <p>Вам перезвонят</p>
+               </div>
+            </div>
+            <p>Отправляя заявку, вы соглашаетесь с условиями оферты</p>
+        </div>
+    </div>
+    <div id="driver_Modal1" class="driver_Modal">
+        <div onclick="Driver2OpenToClose()"  class="subscribes_Modal_arrow"><i class='bx bx-chevron-left'></i></div>
+        <div style="background-color: black;" class="driver_Modal_div">
+            <div class="driver_Modal_div_center">
+              <h1 style="color: #fff;margin-bottom: 40px;">Как начать получать доход ?</h1>
+              <div class="driver_Modal_div_dumaloq_block">
+                <h1>1</h1>
+                <p>Оставьте заявку</p>
+            </div>
+            <div class="driver_Modal_div_dumaloq_block">
+                <h1>2</h1>
+                <p>Мы позвоним и уточним детали</p>
+            </div>
+            <div class="driver_Modal_div_dumaloq_block">
+                <h1>3</h1>
+                <p>Оформитесь в таксопарке</p>
+            </div>
+            <div class="driver_Modal_div_dumaloq_block">
+                <h1>4</h1>
+                <p>Выходите на линию, получайте заказы + сервисное обслуживание вашего автомобиля за наш счет</p>
+            </div>
+            <div style="margin-bottom: 100px;"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="gift_Modal" class="gift_Modal">
+        <div onclick="GiftOpenToClose()"  class="subscribes_Modal_arrow"><i class='bx bx-chevron-left'></i></div>
+        <div class="gift_Modal_div">
+        <div class="gift_Modal_div_center">
+          <h1>Получить подарок</h1>
+          <button>Пригласить друзей</button>
+          <h2>Карта привелегий <span>Line</span> за две рекомендации</h2>
+        </div>
+          <img src="../Image/Ресурс 1 1.svg" alt="">
+          <div class="gift_Modal_div_center">
+          <p>Поделитесь своим пригласительным кодом</p>
+          <div>
+            <input type="text">
+            <img src="../Image/Frame (5).svg" alt="">
+          </div>
+        </div>
+        <div style="margin-bottom: 120px;"></div>
+        </div>
+    </div>
+
 
     <div class="nastroyka-blat">
         
@@ -540,6 +683,50 @@
             document.querySelector(".bx-menu").style="color:white;z-index: 10;"
         }else{
             document.querySelector("#pay_Modal").style="position: fixed;left: 0px;"
+            document.querySelector("#mediaNavbar").style="position: fixed;left:-100%;background:none;"
+            document.querySelector(".bx-menu").style="color:black;z-index: 0;"
+        }
+      }
+      function Pay2OpenToClose(){
+        if (document.querySelector("#pay_Modal1").style.left=="0px") {
+            document.querySelector("#pay_Modal1").style="position: fixed;left: -100%;"
+            document.querySelector("#pay_Modal").style="position: fixed;left:0;background-color: #5E5E5E73;"
+            // document.querySelector(".bx-menu").style="color:white;z-index: 10;"
+        }else{
+            document.querySelector("#pay_Modal1").style="position: fixed;left: 0px;"
+            document.querySelector("#pay_Modal").style="position: fixed;left:-100%;background:none;"
+            // document.querySelector(".bx-menu").style="color:black;z-index: 0;"
+        }
+      }
+      function DriverOpenToClose(){
+        if (document.querySelector("#driver_Modal").style.left=="0px") {
+            document.querySelector("#driver_Modal").style="position: fixed;left: -100%;"
+            document.querySelector("#mediaNavbar").style="position: fixed;left:0;background-color: #5E5E5E73;"
+            document.querySelector(".bx-menu").style="color:white;z-index: 10;"
+        }else{
+            document.querySelector("#driver_Modal").style="position: fixed;left: 0px;"
+            document.querySelector("#mediaNavbar").style="position: fixed;left:-100%;background:none;"
+            document.querySelector(".bx-menu").style="color:black;z-index: 0;"
+        }
+      }
+      function Driver2OpenToClose(){
+        if (document.querySelector("#driver_Modal1").style.left=="0px") {
+            document.querySelector("#driver_Modal1").style="position: fixed;left: -100%;"
+            document.querySelector("#driver_Modal").style="position: fixed;left:0;background-color: #5E5E5E73;"
+            // document.querySelector(".bx-menu").style="color:white;z-index: 10;"
+        }else{
+            document.querySelector("#driver_Modal1").style="position: fixed;left: 0px;"
+            document.querySelector("#driver_Modal").style="position: fixed;left:-100%;background:none;"
+            // document.querySelector(".bx-menu").style="color:black;z-index: 0;"
+        }
+      }
+      function GiftOpenToClose(){
+        if (document.querySelector("#gift_Modal").style.left=="0px") {
+            document.querySelector("#gift_Modal").style="position: fixed;left: -100%;"
+            document.querySelector("#mediaNavbar").style="position: fixed;left:0;background-color: #5E5E5E73;"
+            document.querySelector(".bx-menu").style="color:white;z-index: 10;"
+        }else{
+            document.querySelector("#gift_Modal").style="position: fixed;left: 0px;"
             document.querySelector("#mediaNavbar").style="position: fixed;left:-100%;background:none;"
             document.querySelector(".bx-menu").style="color:black;z-index: 0;"
         }
