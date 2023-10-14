@@ -402,16 +402,16 @@ body {
     width: 100px;
     min-width: 100px;
     border-radius: 20px;
-    background: linear-gradient(rgba(158, 255, 203, 1), rgba(0, 255, 10, 1));
+    border:2px solid #9EFFCB;
+    background: #fff ;
+    /* background: linear-gradient(180deg, #ff00f7 0%, #6F00FF 100%); */
   }
 
   .subscribes_Modal_div_card_big_div:nth-child(2) {
-    background: #fff !important;
-    border: 2px solid rgb(255, 0, 247);
+    border: 2px solid #FFE100;
   }
 
   .subscribes_Modal_div_card_big_div:nth-child(3) {
-    background: #fff !important;
     border: 2px solid rgb(179, 0, 255);
   }
 
@@ -428,7 +428,8 @@ body {
     line-height: normal;
     border: 0;
     padding: 4px 8px 4px 8px;
-    background: #fff;
+    background: #9EFFCB;
+    
   }
 
   .subscribes_Modal_div_card_big_div h1 {
@@ -454,11 +455,11 @@ body {
   }
 
   .subscribes_Modal_div_card_big {
-    width: 93%;
-    margin-left: auto;
+    width: 88%;
+    margin: auto;
     overflow: scroll;
     display: flex;
-    align-items: baseline;
+    align-items: stretch;
     justify-content: space-between;
     gap: 15px;
     /* padding-right: 25px; */
@@ -470,6 +471,9 @@ body {
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
+  }
+  .subscribes_Modal_div_card_big::-webkit-scrollbar {
+    display: none;
   }
 
   .subscribes_Modal_div_subscribes_card {
