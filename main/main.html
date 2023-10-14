@@ -121,19 +121,18 @@
         <h1>Подписки</h1>
         <p>Хотите экономить на каждой поездке во всех агрегаторах ? Выберите подходящий тариф и оформите подписку.<br><br><span>Обратите внимание!</span> Скидки будут доступны только при выборе безналичного способа оплаты. Скидка на наличные не распространяется.</p>
         <div class="subscribes_Modal_div_card_big">
-            <div onclick="Fon(1)" id="subscribes_Modal_div_card_big_div" class="subscribes_Modal_div_card_big_div">
-                <button id="subscribes_Modal_div_card_big_div_button" class="subscribes_Modal_div_card_big_div_emblema">Lite</button>
+            <div class="subscribes_Modal_div_card_big_div">
+                <button  class="subscribes_Modal_div_card_big_div_emblema">Lite</button>
                 <h1>1 ₽ / мес</h1>
                 <p>Скидки до 3-х дней в неделю, кроме пт-сб</p>
             </div>
-            <div onclick="Fon(2)" id="subscribes_Modal_div_card_big_div2" class="subscribes_Modal_div_card_big_div">
-                <button id="subscribes_Modal_div_card_big_div_button1" style="background-color:#fed0c2 ;" class="subscribes_Modal_div_card_big_div_emblema">Basic</button>
+            <div class="subscribes_Modal_div_card_big_div">
+                <button style="background-color:#fed0c2 ;" class="subscribes_Modal_div_card_big_div_emblema">Basic</button>
                 <h1>199 ₽ / мес</h1>
                 <p>Скидки до 5 дней в неделю и в выходные</p>
             </div>
-            <div onclick="Fon(3)" id="subscribes_Modal_div_card_big_div3" class="subscribes_Modal_div_card_big_div">
-                <button style="background-color: rgb(207, 158, 253);"
-                id="subscribes_Modal_div_card_big_div_button3" class="subscribes_Modal_div_card_big_div_emblema"><img src="../main img/Group 9.svg" alt="">Premium</button>
+            <div class="subscribes_Modal_div_card_big_div">
+                <button style="background-color: rgb(207, 158, 253);" class="subscribes_Modal_div_card_big_div_emblema"><img src="../main img/Group 9.svg" alt="">Premium</button>
                 <h1>299 ₽ / мес</h1>
                 <p>Скидки каждый день, и еще больше в выходные</p>
             </div>
@@ -917,31 +916,6 @@
       function BosIchi2(){
         document.querySelector(".nastroyka-ichi").style="display:none"
         document.querySelector(".nastroyka-blat_text").style="display:block"
-      }
-
-      function Fon(id){
-    
-        if (id==1) {
-            document.querySelector("#subscribes_Modal_div_card_big_div").style="background:linear-gradient(136.3deg, rgb(217 255 235) 14.31%, rgb(177, 255, 180) 77.66%);border:none"
-            document.querySelector("#subscribes_Modal_div_card_big_div_button").style="background:white"
-        }else{
-            document.querySelector("#subscribes_Modal_div_card_big_div").style="background:white"
-            document.querySelector("#subscribes_Modal_div_card_big_div_button").style="background: #9EFFCB ;"
-        }
-        if (id==2) {
-                document.querySelector("#subscribes_Modal_div_card_big_div2").style="background:linear-gradient(rgb(255 251 147), rgb(255 126 126));border:none"
-                document.querySelector("#subscribes_Modal_div_card_big_div_button1").style="background:white" 
-        }else{
-                document.querySelector("#subscribes_Modal_div_card_big_div2").style="background:white"
-                document.querySelector("#subscribes_Modal_div_card_big_div_button1").style="background:#fed0c2"
-        }
-        if (id==3) {
-                    document.querySelector("#subscribes_Modal_div_card_big_div3").style="background: linear-gradient(rgb(255 177 252) 0%, rgb(188 135 255) 100%);border:none"
-                    document.querySelector("#subscribes_Modal_div_card_big_div_button3").style="background:white"
-        }else{
-                    document.querySelector("#subscribes_Modal_div_card_big_div3").style="background:white"
-                    document.querySelector("#subscribes_Modal_div_card_big_div_button3").style="background:rgb(207, 158, 253);"
-        }
       }
 
 
