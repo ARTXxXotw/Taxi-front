@@ -86,6 +86,7 @@ body {
     flex-wrap: wrap;
     margin: auto;
     gap: 10px;
+    height: 450px;
   }
 
   .div_button_Main {
@@ -105,7 +106,7 @@ body {
     font-family: Yandex Sans Text;
     font-size: 15px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -135,7 +136,7 @@ body {
     font-family: Yandex Sans Text;
     font-size: 15px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     margin-bottom: 0;
     margin-top: 0;
@@ -1791,7 +1792,7 @@ body {
     font-family: Yandex Sans Text;
     font-size: 12px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     text-align: center;
   }
@@ -1820,7 +1821,7 @@ body {
     font-family: Yandex Sans Text;
     font-size: 12px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     text-align: center;
   }
@@ -1849,7 +1850,7 @@ body {
     font-family: Yandex Sans Text;
     font-size: 12px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     text-align: center;
   }
@@ -1858,7 +1859,7 @@ body {
     width: 134px;
     display: block;
     position: relative;
-    top: -40px;
+    top: -43px;
   }
 
   .card_Menu_div_img4 {
@@ -1891,27 +1892,30 @@ body {
     font-family: Yandex Sans Text;
     font-size: 12px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .card_Menu_div3 {
     width: 135px;
     display: block;
+    position: relative;
+    top: 12px;
   }
   .card_Menu_div5 {
     width: 145px;
     display: block;
     position: relative;
-    top: -35px;
+    top: -43px;
   }
   .card_Menu_div5 h1 {
     color: #000;
     font-family: Yandex Sans Text;
     font-size: 12px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     text-align: center;
   }
@@ -1935,7 +1939,7 @@ body {
   font-family: Yandex Sans Text;
   font-size: 12px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   text-align: center;
 }
@@ -1944,7 +1948,7 @@ body {
   width: 140px;
   display: block;
   position: relative;
-  top: -83px;
+  top: -90px;
 }
 
 .card_Menu_div_img6 {
