@@ -592,7 +592,7 @@ body {
   .pay_Modal_div_big_two_button_flex1 {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
   }
   .pay_Modal_div_big_two_button_flex img {
     width: 25px;
