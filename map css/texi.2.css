@@ -10,7 +10,7 @@
     }
     .texi2-modal{
         width: 100%;
-        height: 390px;
+        height: 430px;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         background: #FFFFFF;
@@ -23,7 +23,7 @@
     .texi2-modal-ichi{
         width: 90%;
         margin: auto;
-        padding-top: 35px;
+        padding-top: 20px;
     }
     .krug{
         width: 18px;
@@ -218,6 +218,7 @@ border-top-right-radius: 40px;
 position: absolute;
 bottom: 0;
 position: fixed;
+right: 0;
 }
 .pas-modal-ichi{
     width: 90%;
