@@ -17,39 +17,39 @@
     <h1 class="titleMain">Заголовок</h1>
     <div class="card_Menu">
     
-    <div class="card_Menu_div1">
+    <div class="card_Menu_div1" onclick="map()">
         <div class="card_Menu_div_img1">
         <img src="../Aero.svg" alt="">
         </div>
         <h1>Авиабилеты</h1>
     </div>
-    <div class="card_Menu_div2">
+    <div class="card_Menu_div2" onclick="map()">
         <div class="card_Menu_div_img2">
         <img src="../Train ticket.svg" alt="">
         </div>
         <h1>ЖД Билеты</h1>
     </div>
     
-    <div class="card_Menu_div3">
+    <div class="card_Menu_div3" onclick="map()">
         <div class="card_Menu_div_img3">
         <img src="../main img/visual-web-02-1 1.svg" alt="">
         </div>
         <h1>Трансфер</h1>
     </div>
 
-    <div class="card_Menu_div4">
+    <div class="card_Menu_div4" onclick="map()">
         <div class="card_Menu_div_img4">
         <img src="../main img/Hotel (copy).svg" alt="">
         </div>
         <h1>Отели</h1>
     </div>
-    <div class="card_Menu_div5">
+    <div class="card_Menu_div5" onclick="map()">
         <div class="card_Menu_div_img5">
         <img src="../main img/Travel bag.svg" alt="">
         </div>
         <h1>Путешествие</h1>
     </div>
-    <div class="card_Menu_div6">
+    <div class="card_Menu_div6" onclick="map()">
         <div class="card_Menu_div_img6">
         <img src="../main img/pngimg 1.svg" alt="">
         </div>
@@ -651,7 +651,13 @@
         <div onclick="CloseHelp()"  class="subscribes_Modal_arrow"><i class='bx bx-chevron-left'></i></div>
     </div>
 
+
+
+
+
     <script>
+
+
       function MediaOpenToClose(){
         if (document.querySelector("#mediaNavbar").style.left=="0px") {
             document.querySelector("#mediaNavbar").style="position: fixed;left:-100%;background:none;"
@@ -917,8 +923,9 @@
         document.querySelector(".nastroyka-ichi").style="display:none"
         document.querySelector(".nastroyka-blat_text").style="display:block"
       }
-
-
+      function map(){
+        window.location="../map/texi2.html"
+      }
     </script>
 
 
