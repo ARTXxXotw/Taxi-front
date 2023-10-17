@@ -339,8 +339,23 @@ body {
     margin-left: 14.7px;
     margin-top: 17px;
   }
-
+  .subscribes_Modal_arrow1{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #FFE100;
+    margin-left: 12px;
+    margin-top: 17px;
+  }
   .subscribes_Modal_arrow i {
+    color: #535353;
+    font-size: 22px;
+  }
+  .subscribes_Modal_arrow1 i {
     color: #535353;
     font-size: 22px;
   }
@@ -1982,8 +1997,29 @@ top: 3px;
   right: 0;
   bottom: 0;
 } */
-
-
+.oq-oynaaaaaa_fon{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #5e5e5e73;
+  transition: 0.4s;
+}
+.oq-oynaaaaaa{
+ width: 100%;    
+ height: 92%;
+ border-top-left-radius: 40px;
+ border-top-right-radius: 40px;
+ background: #FFFFFF;
+ position: absolute;
+ bottom: 0;
+ position: fixed;
+ right: 0;
+ bottom: -100%;
+ transition: 0.4s;   
+}
 }
 
 @media (max-width: 361px) {

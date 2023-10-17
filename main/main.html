@@ -688,7 +688,7 @@
                             <div class="aaas">
                                 <p>Адрес 2 <div class="dum"></div><span>9 мин</span>  </p>
                             </div>
-                            <div class="aaas3">
+                            <div onclick="oqFonOpen()" class="aaas3">
                                 <img src="../map img/Vector.png" alt="">
                             </div>
                         </div>
@@ -757,13 +757,27 @@
     </div>
     </div>
 
+<div class="oq-oynaaaaaa_fon">
+<div  onclick="oqFonClose()" class="subscribes_Modal_arrow1"><i class='bx bx-chevron-left'></i></div>
+<div class="oq-oynaaaaaa">
+
+</div>
+</div>
 
 
     <script>
+      function oqFonOpen(){
+        document.querySelector(".oq-oynaaaaaa_fon").style="position: fixed;bottom:0px;"
+        document.querySelector(".oq-oynaaaaaa").style="position: fixed;bottom:0px;"
+      }
+      function oqFonClose(){
+        document.querySelector(".oq-oynaaaaaa_fon").style="position: fixed;bottom:-100%;"
+        document.querySelector(".oq-oynaaaaaa").style="position: fixed;bottom:-100%;"
+      }
       function cardOpen(){
         document.querySelector(".pas-modal-1").style="position: fixed;bottom:0px;"
         document.querySelector(".texi2-modal").style="position: fixed;bottom:0px;"
-        document.querySelector(".texi2_kotta_fon").style="position: fixed;bottom:0px;background: #5E5E5E73;"
+        document.querySelector(".texi2_kotta_fon").style="position: fixed;bottom:0px;background: #ffffff;"
       }
       function cardClose(){
         document.querySelector(".pas-modal-1").style="position: fixed;bottom:-100%;"

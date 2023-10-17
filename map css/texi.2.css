@@ -15,13 +15,14 @@
         bottom: -100%;
         left: -5px;
         right: 0;
+        
     }
     .padroda-scrool-taxi::-webkit-scrollbar {
         display: none;
       }
     .texi2-modal{
         width: 100%;
-        height: 430px;
+        height: 410px;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         background: #FFFFFF;
@@ -33,6 +34,7 @@
         bottom: -100%;
         transition: 0.4s;
     }
+
     .texi2-modal-ichi{
         width: 90%;
         margin: auto;
@@ -68,7 +70,7 @@ text-align: center;
     }
     .texi2-mod1-addres{
         display: flex;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     .bir-a{
         width: 50px;
