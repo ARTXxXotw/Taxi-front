@@ -50,7 +50,7 @@
         </div>
         <h1>Путешествие</h1>
     </div>
-    <div class="card_Menu_div6" onclick="map()">
+    <div class="card_Menu_div6" onclick="cardOpen()">
         <div class="card_Menu_div_img6">
         <img src="../main img/pngimg 1.svg" alt="">
         </div>
@@ -653,9 +653,11 @@
     </div>
 
 
-    
-    <div class="texi2-kotta">
-        <div class="texi2-ichi">
+
+    <div class="texi2_kotta_fon">
+        <div onclick="cardClose()"  class="subscribes_Modal_arrow"><i class='bx bx-chevron-left'></i></div>
+        <div class="texi2-kotta">
+            <div class="texi2-ichi">
             <div class="texi2-modal">
                 <div class="texi2-modal-ichi">
                     <div class="texi2-mod1-addres">
@@ -753,11 +755,22 @@
             </div>
         </div>
     </div>
+    </div>
+
 
 
     <script>
-
-
+      function cardOpen(){
+        document.querySelector(".pas-modal-1").style="position: fixed;bottom:0px;"
+        document.querySelector(".texi2-modal").style="position: fixed;bottom:0px;"
+        document.querySelector(".texi2_kotta_fon").style="position: fixed;bottom:0px;background: #5E5E5E73;"
+      }
+      function cardClose(){
+        document.querySelector(".pas-modal-1").style="position: fixed;bottom:-100%;"
+        document.querySelector(".texi2-modal").style="position: fixed;bottom:-100%;"
+        document.querySelector(".texi2_kotta_fon").style="position: fixed;bottom:-100%;background: none;"
+      }
+      
       function MediaOpenToClose(){
         if (document.querySelector("#mediaNavbar").style.left=="0px") {
             document.querySelector("#mediaNavbar").style="position: fixed;left:-100%;background:none;"

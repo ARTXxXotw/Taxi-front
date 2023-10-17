@@ -8,6 +8,17 @@
     .texi2-kotta{
       width: 100%;
     }
+    .texi2_kotta_fon{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        bottom: -100%;
+        left: -5px;
+        right: 0;
+    }
+    .padroda-scrool-taxi::-webkit-scrollbar {
+        display: none;
+      }
     .texi2-modal{
         width: 100%;
         height: 430px;
@@ -19,6 +30,8 @@
         bottom: 0;
         position: fixed;
         right: 0;
+        bottom: -100%;
+        transition: 0.4s;
     }
     .texi2-modal-ichi{
         width: 90%;
@@ -219,6 +232,8 @@ position: absolute;
 bottom: 0;
 position: fixed;
 right: 0;
+bottom: -100%;
+transition: 0.4s;
 }
 .pas-modal-ichi{
     width: 90%;
